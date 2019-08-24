@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(ImageStep());
+void main() => runApp(MyApp());
 
-class ImageStep extends StatelessWidget {
+class MyApp extends StatelessWidget {
+
+  // TODO 1/2 Add title
+  final String title = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'The Image Step',
+      title: title,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Home(title: 'The Image Step'),
+      home: Home(title: title),
     );
   }
 }
@@ -25,7 +29,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text('The Image Step'),
+        title: Text(title),
       ),
       backgroundColor: Colors.white,
       body: PageContent(),
@@ -41,7 +45,7 @@ class PageContent extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
-
+        // TODO 2/2 Put stuff here
       ],
     );
   }

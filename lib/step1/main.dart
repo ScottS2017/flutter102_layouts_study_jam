@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(ImageStep());
+void main() => runApp(MyApp());
 
-class ImageStep extends StatelessWidget {
+class MyApp extends StatelessWidget {
+
+  String title = '1) Rudimentary Layouts';
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Rudimentary Layouts',
+      title: title,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Home(title: 'Rudimentary Layouts'),
+      home: Home(title: title),
     );
   }
 }

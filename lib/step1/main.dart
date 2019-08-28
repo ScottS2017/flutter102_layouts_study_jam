@@ -3,14 +3,16 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+
   /// Personal style choice: Declare a title String up here and just use the var below
-  String title = '1) Rudimentary Layouts';
+  String title = 'Flutter Layout Tutorial - 1';
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: title,
       theme: ThemeData(
+
         /// It's always better to use a resource file for colors and refer to it, but this is just a basic example.
         primarySwatch: Colors.blue,
       ),
@@ -50,6 +52,7 @@ class PageContent extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+
             /// The below media query will return the screen dimensions.
             ///  Since we already need an Expanded to make this work, we can make the width of 2 of these
             ///  Containers one-third of the screen width and then make the third Container use all leftover space.

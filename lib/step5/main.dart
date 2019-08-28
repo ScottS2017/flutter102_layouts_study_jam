@@ -1,52 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:flutter102_layout_n_route/step5/ButtonSection.dart';
+// Uncomment lines 7 and 10 to view the visual layout at runtime.
+// import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
 
-  // TODO 1/2 Add title
-  final String title = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+  String title = 'Flutter Layout Tutorial - 5';
+
+  Color color;
 
   @override
   Widget build(BuildContext context) {
+
+    /// The color variable needs to be instantiated inside the build method because context doesn't exist before it
+    color = Theme.of(context).primaryColor;
+
     return MaterialApp(
       title: title,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(title),
+        ),
+        body: Container(
+          height: double.infinity,
+          width: double.infinity,
+          alignment: Alignment.center,
+          child: Container(
+            height: 120,
+            width: double.infinity,
+            child: ButtonSection(
+              color: color,
+            ),
+          ),
+        ),
       ),
-      home: Home(title: title),
-    );
-  }
-}
-
-class Home extends StatelessWidget {
-  Home({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: Text(title),
-      ),
-      backgroundColor: Colors.white,
-      body: PageContent(),
-    );
-  }
-}
-
-class PageContent extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: <Widget>[
-        // TODO 2/2 Put stuff here
-      ],
     );
   }
 }

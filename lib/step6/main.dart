@@ -1,52 +1,47 @@
 import 'package:flutter/material.dart';
+import 'package:flutter102_layout_n_route/step6/ButtonSection.dart';
+import 'package:flutter102_layout_n_route/step6/TextSection.dart';
+import 'package:flutter102_layout_n_route/step6/TitleSelection.dart';
+// Uncomment lines 7 and 10 to view the visual layout at runtime.
+// import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
 
-  // TODO 1/2 Add title
-  final String title = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+  Color color;
+  String title = 'Flutter Layout Tutorial - 6';
 
   @override
   Widget build(BuildContext context) {
+
+    /// The color variable needs to be instantiated inside the build method because context doesn't exist before it
+    color = Theme.of(context).primaryColor;
+
     return MaterialApp(
       title: title,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(title),
+        ),
+        body: ListView(
+          children: [
+            Image.asset(
+              'assets/step_2_images/lake.jpg',
+              width: 600,
+              height: 240,
+              fit: BoxFit.cover,
+            ),
+            const TitleSelection(),
+            ButtonSection(
+              color: color,
+            ),
+            const TextSection(),
+          ],
+        ),
       ),
-      home: Home(title: title),
-    );
-  }
-}
-
-class Home extends StatelessWidget {
-  Home({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: Text(title),
-      ),
-      backgroundColor: Colors.white,
-      body: PageContent(),
-    );
-  }
-}
-
-class PageContent extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: <Widget>[
-        // TODO 2/2 Put stuff here
-      ],
     );
   }
 }

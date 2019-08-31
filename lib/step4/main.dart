@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter102_layout_n_route/app/app_strings.dart';
 import 'package:flutter102_layout_n_route/step4/TitleSelection.dart';
 // Uncomment lines 7 and 10 to view the visual layout at runtime.
 // import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
@@ -9,7 +10,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
 
-  String title = 'Flutter Layout Tutorial - 4';
+  String title = AppStrings.step4;
 
   @override
   Widget build(BuildContext context) {

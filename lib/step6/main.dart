@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter102_layout_n_route/app/app_strings.dart';
 import 'package:flutter102_layout_n_route/step6/ButtonSection.dart';
 import 'package:flutter102_layout_n_route/step6/TextSection.dart';
 import 'package:flutter102_layout_n_route/step6/TitleSelection.dart';
@@ -12,7 +13,7 @@ void main() {
 class MyApp extends StatelessWidget {
 
   Color color;
-  String title = 'Flutter Layout Tutorial - 6';
+  String title = AppStrings.step6;
 
   @override
   Widget build(BuildContext context) {

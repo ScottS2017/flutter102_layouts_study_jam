@@ -7,6 +7,8 @@ class TextSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+
+      /// EdgeInsets are used for both Padding and Margin.
       padding: const EdgeInsets.all(32),
       child: Text(
         'Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese '
@@ -15,6 +17,9 @@ class TextSection extends StatelessWidget {
           'half-hour walk through pastures and pine forest, leads you to the '
           'lake, which warms to 20 degrees Celsius in the summer. Activities '
           'enjoyed here include rowing, and riding the summer toboggan run.',
+
+        /// If softWrap is false, the glyphs in the text will be positioned as if
+        /// there was unlimited horizontal space.
         softWrap: true,
       ),
     );

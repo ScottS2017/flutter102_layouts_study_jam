@@ -10,4 +10,6 @@ class AppStrings{
     static const String step8 = 'Layout Builders';
 
     static const String sampleImageCaption = 'Sample Image Caption';
+    static const String oeschinenLake = 'Oeschinen Lake Campground';
+    static const String kandersteg = 'Kandersteg, Switzerland';
 }

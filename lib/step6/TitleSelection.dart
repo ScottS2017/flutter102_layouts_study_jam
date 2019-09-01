@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter102_layout_n_route/app/app_strings.dart';
 
 class TitleSelection extends StatelessWidget {
 
@@ -19,14 +20,14 @@ class TitleSelection extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Text(
-                    'Oeschinen Lake Campground',
+                    AppStrings.oeschinenLake,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
                 Text(
-                  'Kandersteg, Switzerland',
+                  AppStrings.kandersteg,
                   style: TextStyle(
                     color: Colors.grey[500],
                   ),

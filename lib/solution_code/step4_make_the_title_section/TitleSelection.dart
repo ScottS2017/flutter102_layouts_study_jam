@@ -12,6 +12,7 @@ class TitleSelection extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(32),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
 
         /// A Row's or a Column's default alignment is start, so you don't need
         /// to specify that.
@@ -25,6 +26,7 @@ class TitleSelection extends StatelessWidget {
           /// the main axis (horizontal) as it can.
           Expanded(
             child: Column(
+              mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
 

@@ -23,7 +23,7 @@ class ButtonSection extends StatelessWidget {
 
           /// Don't call parameters in random order... Except to get revenge on someone.
           CustomButton(color: color, icon: Icons.call, label: 'CALL'),
-          CustomButton(color: color, label: 'ROUTE', icon: Icons.call,),
+          CustomButton(color: color, label: 'ROUTE', icon: Icons.near_me,),
           CustomButton(label: 'SHARE', color: color, icon: Icons.share),
         ],
       ),

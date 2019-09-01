@@ -36,12 +36,11 @@ class AutoResizingImageExample extends StatelessWidget {
       ),
       backgroundColor: Colors.white,
       body: Container(
-        height: MediaQuery.of(context).size.height,
+        height: double.infinity,
         width: MediaQuery.of(context).size.width,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Spacer(flex: 10),
             Expanded(

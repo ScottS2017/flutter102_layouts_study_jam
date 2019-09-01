@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter102_layout_n_route/app/app_strings.dart';
-import 'package:flutter102_layout_n_route/step5/ButtonSection.dart';
+import 'package:flutter102_layout_n_route/lesson_code/step4/TitleSelection.dart';
+
 // Uncomment lines 7 and 10 to view the visual layout at runtime.
 // import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 
@@ -10,15 +11,10 @@ void main() {
 
 class MyApp extends StatelessWidget {
 
-  String title = AppStrings.step5;
-
-  Color color;
+  String title = AppStrings.step4;
 
   @override
   Widget build(BuildContext context) {
-
-    /// The color variable needs to be instantiated inside the build method because context doesn't exist before it
-    color = Theme.of(context).primaryColor;
 
     return MaterialApp(
       title: title,
@@ -33,10 +29,7 @@ class MyApp extends StatelessWidget {
           child: Container(
             height: 120,
             width: double.infinity,
-            child: ButtonSection(
-              color: color,
-            ),
-          ),
+            child: TitleSelection()),
         ),
       ),
     );

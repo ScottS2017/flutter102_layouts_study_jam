@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter102_layout_n_route/app/app_strings.dart';
-import 'package:flutter102_layout_n_route/step6/ButtonSection.dart';
-import 'package:flutter102_layout_n_route/step6/TextSection.dart';
-import 'package:flutter102_layout_n_route/step6/TitleSelection.dart';
+import 'package:flutter102_layout_n_route/lesson_code/step5/ButtonSection.dart';
+
 // Uncomment lines 7 and 10 to view the visual layout at runtime.
 // import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 
@@ -12,8 +11,9 @@ void main() {
 
 class MyApp extends StatelessWidget {
 
+  String title = AppStrings.step5;
+
   Color color;
-  String title = AppStrings.step6;
 
   @override
   Widget build(BuildContext context) {
@@ -27,20 +27,17 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text(title),
         ),
-        body: ListView(
-          children: [
-            Image.asset(
-              'assets/step_2_images/lake.jpg',
-              width: 600,
-              height: 240,
-              fit: BoxFit.cover,
-            ),
-            const TitleSelection(),
-            ButtonSection(
+        body: Container(
+          height: double.infinity,
+          width: double.infinity,
+          alignment: Alignment.center,
+          child: Container(
+            height: 120,
+            width: double.infinity,
+            child: ButtonSection(
               color: color,
             ),
-            const TextSection(),
-          ],
+          ),
         ),
       ),
     );

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ButtonColumn extends StatelessWidget {
+class CustomButton extends StatelessWidget {
 
   /// We're being passed a Color, Icon and String.
   /// Now, turn them into a custom button.
@@ -8,7 +8,7 @@ class ButtonColumn extends StatelessWidget {
   final IconData icon;
   final String label;
 
-  ButtonColumn({
+  CustomButton({
     this.color,
     this.icon,
     this.label,

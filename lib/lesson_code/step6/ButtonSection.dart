@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter102_layout_n_route/step5/ButtonColumn.dart';
+import 'package:flutter102_layout_n_route/lesson_code/step6/CustomButton.dart';
 
 class ButtonSection extends StatelessWidget {
 
@@ -15,9 +15,9 @@ class ButtonSection extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          ButtonColumn(color: color, icon: Icons.call, label: 'CALL'),
-          ButtonColumn(color: color, icon: Icons.near_me, label: 'ROUTE'),
-          ButtonColumn(color: color, icon: Icons.share, label: 'SHARE'),
+          CustomButton(color: color, icon: Icons.call, label: 'CALL'),
+          CustomButton(color: color, icon: Icons.near_me, label: 'ROUTE'),
+          CustomButton(color: color, icon: Icons.share, label: 'SHARE'),
         ],
       ),
     );

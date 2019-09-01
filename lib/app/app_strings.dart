@@ -1,6 +1,7 @@
 class AppStrings{
 
-    static const String step1 = 'Rudimantary Layouts';
+    static const String step0 = 'Rudimantary Layouts';
+    static const String step1 = 'Auto-Resize Images';
     static const String step2 = 'Making the Text Section';
     static const String step3 = 'Making the Button Column';
     static const String step4 = 'Making the Title Section';

@@ -6,7 +6,7 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   /// Personal style choice: Declare a title String up here and just reuse the var below
-  String _title = AppStrings.step1;
+  String _title = AppStrings.step0;
 
   @override
   Widget build(BuildContext context) {

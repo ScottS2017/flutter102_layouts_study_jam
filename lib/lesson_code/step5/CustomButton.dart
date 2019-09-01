@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ButtonColumn extends StatelessWidget {
+class CustomButton extends StatelessWidget {
   final Color color;
   final IconData icon;
   final String label;
 
-  ButtonColumn({
+  CustomButton({
     this.color,
     this.icon,
     this.label,

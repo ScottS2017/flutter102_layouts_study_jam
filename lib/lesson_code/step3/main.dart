@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter102_layout_n_route/app/app_strings.dart';
-import 'package:flutter102_layout_n_route/step3/ButtonColumn.dart';
+import 'package:flutter102_layout_n_route/lesson_code/step3/CustomButton.dart';
+
 // Uncomment lines 7 and 10 to view the visual layout at runtime.
 // import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
           height: double.infinity,
           width: double.infinity,
           alignment: Alignment.center,
-          child: ButtonColumn(
+          child: CustomButton(
             icon: Icons.textsms,
             color: Colors.purple,
             label: "Label",

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter102_layout_n_route/lesson_code/step6/CustomButton.dart';
+import 'package:flutter102_layout_n_route/lesson_code/step6_put_it_all_together/CustomButton.dart';
 
 class ButtonSection extends StatelessWidget {
 

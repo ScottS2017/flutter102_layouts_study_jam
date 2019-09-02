@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter102_layout_n_route/app/app_strings.dart';
 import 'package:flutter102_layout_n_route/lesson_code/step2_make_the_text_section/TextSection.dart';
 
-// Uncomment lines 7 and 10 to view the visual layout at runtime.
-// import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
-
 void main() {
   runApp(MyApp());
 }

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter102_layout_n_route/app/app_strings.dart';
-import 'package:flutter102_layout_n_route/solution_code/step6/ButtonSection.dart';
-import 'package:flutter102_layout_n_route/solution_code/step6/TextSection.dart';
-import 'package:flutter102_layout_n_route/solution_code/step6/TitleSelection.dart';
-// Uncomment lines 7 and 10 to view the visual layout at runtime.
-// import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
+import 'package:flutter102_layout_n_route/solution_code/step6_put_it_all_together/ButtonSection.dart';
+import 'package:flutter102_layout_n_route/solution_code/step6_put_it_all_together/TextSection.dart';
+import 'package:flutter102_layout_n_route/solution_code/step6_put_it_all_together/TitleSelection.dart';
 
 void main() {
   runApp(MyApp());

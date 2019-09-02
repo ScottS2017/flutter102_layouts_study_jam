@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter102_layout_n_route/app/app_strings.dart';
-import 'package:flutter102_layout_n_route/solution_code/step4/TitleSelection.dart';
-
-// Uncomment lines 7 and 10 to view the visual layout at runtime.
-// import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
+import 'package:flutter102_layout_n_route/solution_code/step4_make_the_title_section/TitleSelection.dart';
 
 void main() {
   runApp(MyApp());

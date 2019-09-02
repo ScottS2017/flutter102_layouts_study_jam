@@ -106,7 +106,7 @@ class PageContent extends StatelessWidget {
         /// Using a margin to gain 100dp of separation.
         /// Also, we're using double.infinity to achieve the same effect as "match_parent" in Android.
         Container(
-          margin: EdgeInsets.only(top: 0, bottom: 100, right: 0, left: 0),
+          margin: EdgeInsets.only(top: 0, bottom: 50, right: 0, left: 0),
           height: 10,
           width: double.infinity,
           color: Colors.brown,
@@ -119,12 +119,18 @@ class PageContent extends StatelessWidget {
           width: MediaQuery.of(context).size.width * .9,
           height: 100,
           alignment: Alignment.center,
+          margin: EdgeInsets.only (top: 0 , bottom: 20 , right: 0, left: 0),
           decoration: BoxDecoration(
             border: Border.all(width: 2.0, color: const Color(0x55000000)),
           ),
         ),
 
         /// Using an Expanded again, this time to eat up all leftover space at the bottom.
+        Placeholder(
+          color: Colors.blueGrey,
+          fallbackHeight: 150,
+          fallbackWidth: 100,
+        ),
         Expanded(
           child: SizedBox(
             width: 1,
